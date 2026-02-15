@@ -1,0 +1,65 @@
+/* ===== Base ===== */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f1115;
+  color: #eaeaea;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border-bottom: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #16181d;
+  color: #4ea1ff;
+}
+
+tr:nth-child(even) td {
+  background-color: #1a1c22;
+}
+
+td {
+  color: #eaeaea;
+}
+
+td.earnings-positive {
+  color: #4ef17d; /* green for positive earnings */
+}
+
+td.earnings-negative {
+  color: #ff4e4e; /* red for negative earnings */
+}
+
+/* ===== Header ===== */
+header {
+  margin-bottom: 20px;
+}
+
+header p {
+  color: #999;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  table, th, td {
+    font-size: 0.9rem;
+  }
+}
